@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My Evernote</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link href="~/Content/shop-homepage.css" rel="stylesheet" type="text/css" />
+
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Menü</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">My Evernote</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-cog"></span> Yönetim
+                            @*<i class="bi bi-tools"></i> Yönetim*@
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-star"></span> Beğenilenler
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-list"></span> Son Yazılanlar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-info-sign"></span> Hakkımızda
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-log-in"></span>  Giriş
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-plus-sign"></span> Üye ol
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-user"></i> cagatayerdogdu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-log-out"></span> Çıkış
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    @RenderBody()
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+
+                <div class="col-lg-4 text-center">
+                    <h5><strong>Site Haritası</strong></h5>
+                    <hr />
+                    <a href="#">
+                        <span class="glyphicon glyphicon-star"></span> Beğenilenler
+                    </a> <br />
+                    <a href="#">
+                        <span class="glyphicon glyphicon-list"></span> Son Yazılanlar
+                    </a> <br />
+                    <a href="#">
+                        <span class="glyphicon glyphicon-info-sign"></span> Hakkımızda
+                    </a>
+                </div>
+
+                <div class="col-lg-4 text-center">
+                    <h5><strong>My Evernote</strong></h5>
+                    <hr />
+                    <p>Tüm Hakları Saklıdır. &copy; <br /> MyEvernote @DateTime.Now.Year </p>
+                </div>
+
+                <div class="col-lg-4 text-center">
+                    <h5>
+                        <strong>E-Bülten Üyeliği</strong>
+                    </h5>
+                    <hr />
+                    <div class="col-md-10 col-md-offset-1">
+                        <p> lorem ipsum  lorem ipsum  lorem ipsum  lorem ipsum  </p>
+
+                        <div class="input-group">
+                            <input type="text" class="form-control-sm" placeholder="e-posta adresiniz" />
+                            <button class="btn-xs btn-primary" type="submit" id="btnGonder">
+                                <span class="glyphicon glyphicon-send"></span> Gönder
+                            </button>    @*btn-outline-secondary*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/Scripts/jquery.js"></script>
+    @*<script src="~/Scripts/jquery-3.4.1.min.js"></script>*@
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
