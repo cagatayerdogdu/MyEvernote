@@ -11,7 +11,7 @@ namespace MyEvernote.Web.Controllers
 {
     public class CategoryController : Controller
     {
-        // TempData ile Category listeleme
+        // TempData ile Category listeleme  
         /*public ActionResult Select(string title)
         {
             if (title == null)
